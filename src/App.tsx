@@ -3,6 +3,7 @@ import { Search } from "./components/SearchForm";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { getRepos, getUser } from "./services/api";
 import { Pagination } from "./components/Pagination";
+import { UserInfo } from "./components/UserInfo";
 
 const PER_PAGE = 20;
 
@@ -34,7 +35,17 @@ function App() {
     <main>
       <h1>Repo Spy 🔎</h1>
       <Search onSubmit={(data) => setUserName(data.userName)} />
-      <h2>{userData?.name}</h2>
+      {userData && (
+        <UserInfo
+          avatarUrl={userData.avatar_url}
+          name={userData.name || ""}
+          bio={userData.bio || ""}
+          location={userData.location || "unknown"}
+          followers={userData.followers}
+          publicRepos={userData.public_repos}
+        />
+      )}
+
       {repoData?.total_count && (
         <div>
           <p role="alert" id="page-count">

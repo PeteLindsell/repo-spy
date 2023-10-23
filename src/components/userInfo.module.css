@@ -1,0 +1,13 @@
+.wrapper {
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: 1px solid grey;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.logo {
+  height: 200px;
+}
