@@ -8,3 +8,16 @@ test("page renders as expected", async ({ page }) => {
     "Repo Spy"
   );
 });
+
+test("can search for repos", async ({ page }) => {
+  await page.goto("/");
+  await page.getByLabel("GitHub user or organization name").fill("github");
+  await page.getByRole("button", { name: "Find repos" }).click();
+
+  await expect(
+    page.getByRole("heading", { name: "github", level: 2 })
+  ).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "advisory-database", level: 3 })
+  ).toBeVisible();
+});
