@@ -21,3 +21,13 @@ test("can search for repos", async ({ page }) => {
     page.getByRole("heading", { name: "advisory-database", level: 3 })
   ).toBeVisible();
 });
+
+test("can paginate results", async ({ page }) => {
+  await page.goto("/");
+  await page.getByLabel("GitHub user or organization name").fill("github");
+  await page.getByRole("button", { name: "Find repos" }).click();
+
+  await expect(page.getByRole("alert")).toContainText("Showing page 1 of 24");
+  await page.getByRole("button", { name: "Page 3 of 24" }).click();
+  await expect(page.getByRole("alert")).toContainText("Showing page 3 of 24");
+});

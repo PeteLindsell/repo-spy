@@ -11,7 +11,13 @@ export const getUser = async (userName: string): Promise<GetUserRes> => {
 
 type GetReposRes = Endpoints["GET /search/repositories"]["response"]["data"];
 
-export const getRepos = async (userName: string): Promise<GetReposRes> => {
-  const res = await fetch(`${BASE_URL}/search/repositories?${userName}`);
+export const getRepos = async (
+  userName: string,
+  page: number,
+  perPage: number
+): Promise<GetReposRes> => {
+  const res = await fetch(
+    `${BASE_URL}/search/repositories?${userName}&per_page=${perPage}&page=${page}`
+  );
   return res.json();
 };

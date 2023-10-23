@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+
+  &[aria-pressed="true"] {
+    background-color: var(--color-primary);
+    color: var(--color-white)
+  }
+}
