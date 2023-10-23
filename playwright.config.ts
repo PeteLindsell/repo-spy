@@ -6,8 +6,8 @@ import { defineConfig, devices } from "@playwright/test";
  */
 // require('dotenv').config();
 
-// Use process.env.PORT by default and fallback to port 3000
-const PORT = process.env.PORT || 5174;
+// Use process.env.PORT by default and fallback to port 5173
+const PORT = process.env.PORT || 5173;
 
 // Set webServer.url and use.baseURL with the location of the WebServer respecting the correct set port
 const baseURL = `http://localhost:${PORT}`;

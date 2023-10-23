@@ -2,6 +2,8 @@
 
 Search GitHub user and organisations public repositories.
 
+Demo site can be found at [repo-spy.netlify.app/](https://repo-spy.netlify.app/)
+
 ## Getting Started
 
 Install dependencies:
