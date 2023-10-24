@@ -1,0 +1,13 @@
+.wrapper {
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-1);
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--color-text-secondary);
+  &:hover {
+    color: var(--color-text-primary);
+  }
+}

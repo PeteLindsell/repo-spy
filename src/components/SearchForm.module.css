@@ -1,0 +1,18 @@
+.wrapper {
+  align-items: flex-end;
+  display: flex;
+  gap: var(--spacing-1);
+  margin: 0 auto;
+}
+
+.input {
+  font-size: 1.5rem;
+  padding: var(--spacing-1);
+  height: 3rem;
+}
+
+.submit {
+  font-size: 1.5rem;
+  padding: var(--spacing-1);
+  height: 3rem;
+}

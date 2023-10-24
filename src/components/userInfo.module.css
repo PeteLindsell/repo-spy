@@ -1,7 +1,7 @@
 .wrapper {
   align-items: center;
   border-radius: var(--border-radius);
-  border: 1px solid grey;
+  border: 1px solid var(--color-border);
   display: flex;
   gap: 20px;
   overflow: hidden;

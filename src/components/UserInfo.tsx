@@ -1,4 +1,4 @@
-import styles from "./userInfo.module.css";
+import styles from "./UserInfo.module.css";
 
 type UserInfoProps = {
   avatarUrl: string;

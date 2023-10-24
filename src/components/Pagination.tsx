@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./pagination.module.css";
+import styles from "./Pagination.module.css";
 
 const SPACER = "...";
 const MAX_ITEMS = 7;

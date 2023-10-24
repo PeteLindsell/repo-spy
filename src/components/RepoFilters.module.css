@@ -1,0 +1,10 @@
+.wrapper {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--spacing-1);
+  height: max-content;
+  padding: var(--spacing-1);
+}
