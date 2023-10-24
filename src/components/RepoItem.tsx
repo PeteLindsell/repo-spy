@@ -1,4 +1,4 @@
-import styles from "./RepoItem.module.css";
+import styles from "./repoItem.module.css";
 
 type RepoItemProps = {
   description: string;

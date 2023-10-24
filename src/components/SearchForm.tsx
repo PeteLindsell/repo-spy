@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import styles from "./SearchForm.module.css";
+import styles from "./searchForm.module.css";
 
 type SearchInputs = {
   userName: string;

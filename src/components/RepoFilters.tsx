@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import styles from "./RepoFilters.module.css";
+import styles from "./repoFilters.module.css";
 import { GetReposParams } from "../services/api";
 
 export type FilterFields = {

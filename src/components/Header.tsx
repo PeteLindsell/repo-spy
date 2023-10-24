@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 import GitHubLogo from "../assets/github.svg";
 
 export function Header() {

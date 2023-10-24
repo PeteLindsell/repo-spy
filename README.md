@@ -26,8 +26,8 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to see the r
 
 - eslint
 - prettier
-- husky
-- playwright
+- husky: to run eslint and prettier on pre commit
+- playwright: test the full application as the user uses it while allowing for refactoring of implementation details
 
 ### Continuos Integration
 
@@ -40,10 +40,18 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to see the r
 
 ### Styling
 
-Considered MUI which is great for quickly prototyping or ...
+- CSS Modules
 
-### React Framework
+Considered a component library like MUI which is great for quickly prototyping but for the simplicity of this site decided to go for a lighter weight option of CSS Modules
+
+### Framework
 
 - React Vite
 
-Considered Next.js which is great for lots of ... but gave little value to this site which is hitting an external API
+Considered Next.js which is great for lots of use cases but gave little value to this site which is hitting an external API
+
+## TODO
+
+- Stub api endpoints in tests to prevent testing somebody elses application and to give deterministic results
+- Improve test coverage
+- Refactor home page to reduce nesting
