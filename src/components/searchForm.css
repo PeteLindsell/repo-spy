@@ -1,17 +1,17 @@
-.wrapper {
+.search-form__wrapper {
   align-items: flex-end;
   display: flex;
   gap: var(--spacing-1);
   margin: 0 auto;
 }
 
-.input {
+.search-form__input {
   font-size: 1.5rem;
   padding: var(--spacing-1);
   height: 3rem;
 }
 
-.submit {
+.search-form__submit {
   font-size: 1.5rem;
   padding: var(--spacing-1);
   height: 3rem;

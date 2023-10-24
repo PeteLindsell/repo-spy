@@ -1,4 +1,4 @@
-.wrapper {
+.home__wrapper {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
@@ -7,25 +7,25 @@
   padding: var(--spacing-1);
 }
 
-.title {
+.home__title {
   text-align: center;
 }
 
-.reposList {
+.home__reposList {
   display: flex;
   flex-direction: column;
   flex: 3;
   gap: var(--spacing-1);
 }
 
-.repos {
+.home__repos {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-2);
 }
 
 @media (min-width: 800px) {
-  .repos {
+  .home__repos {
     flex-direction: row;
   }
 }

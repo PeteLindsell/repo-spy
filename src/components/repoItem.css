@@ -1,4 +1,4 @@
-.wrapper {
+.repo-item__wrapper {
   list-style-type: none;
   border: 1px solid var(--color-border);
   padding: var(--spacing-1);
@@ -9,27 +9,27 @@
   gap: 10px;
 }
 
-.topicList {
+.repo-item__topicList {
   display: flex;
   gap: 5px;
   list-style: none;
   flex-wrap: wrap;
 }
 
-.topicItem {
+.repo-item__topicItem {
   background: #aaa;
   color: var(--color-text-primary);
   border-radius: 1rem;
   padding: 2px var(--spacing-1);
 }
 
-.detailedList {
+.repo-item__detailedList {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
 }
 
-.detail {
+.repo-item__detail {
   color: var(--color-text-primary);
   margin-right: var(--spacing-1);
 }

@@ -1,4 +1,4 @@
-.list {
+.pagination__list {
   display: flex;
   list-style: none;
   gap: var(--spacing-1);
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.button {
+.pagination__button {
   width: 2rem;
   height: 2rem;
   font-size: 1rem;

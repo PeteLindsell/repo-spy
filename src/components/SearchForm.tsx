@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import styles from "./searchForm.module.css";
+import "./searchForm.css";
 
 type SearchInputs = {
   userName: string;
@@ -15,17 +15,17 @@ export function Search({ onSubmit }: SearchProps) {
   });
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.wrapper}>
+    <form onSubmit={handleSubmit(onSubmit)} className="search-form__wrapper">
       <label>
         GitHub user or organization name
         <input
           {...register("userName", { required: true })}
           type="search"
-          className={styles.input}
+          className="search-form__input"
         />
       </label>
 
-      <button className={styles.submit}>Search</button>
+      <button className="search-form__submit">Search</button>
     </form>
   );
 }

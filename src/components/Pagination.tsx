@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./pagination.module.css";
+import "./pagination.css";
 
 const SPACER = "...";
 const MAX_ITEMS = 7;
@@ -27,7 +26,7 @@ export function Pagination(props: PaginationProps) {
       const element = document.getElementById("page-count");
       element?.scrollIntoView({ behavior: "smooth" });
     },
-    className: styles.button,
+    className: "pagination__button",
   });
 
   const range = (from: number, to: number) =>
@@ -66,11 +65,11 @@ export function Pagination(props: PaginationProps) {
 
   return (
     <nav aria-label="Pagination" {...rest}>
-      <ul className={styles.list}>
+      <ul className="pagination__list">
         <li>
           <button
             disabled={currentPage === 1}
-            className={styles.button}
+            className="pagination__button"
             {...(currentPage !== 1 && buttonProps(currentPage - 1))}
           >
             ◀︎
@@ -93,7 +92,7 @@ export function Pagination(props: PaginationProps) {
         <li>
           <button
             disabled={currentPage === totalPages}
-            className={styles.button}
+            className="pagination__button"
             {...(currentPage !== totalPages && buttonProps(currentPage + 1))}
           >
             ▶︎

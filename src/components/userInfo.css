@@ -1,4 +1,4 @@
-.wrapper {
+.user-info__wrapper {
   align-items: center;
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
@@ -8,6 +8,6 @@
   text-align: left;
 }
 
-.logo {
+.user-info__logo {
   height: 200px;
 }

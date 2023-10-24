@@ -1,4 +1,4 @@
-import styles from "./userInfo.module.css";
+import "./userInfo.css";
 
 type UserInfoProps = {
   avatarUrl: string;
@@ -18,8 +18,8 @@ export function UserInfo({
   publicRepos,
 }: UserInfoProps) {
   return (
-    <section className={styles.wrapper}>
-      <img src={avatarUrl} alt="" className={styles.logo} />
+    <section className="user-info__wrapper">
+      <img src={avatarUrl} alt="" className="user-info__logo" />
       <div>
         <h2>{name}</h2>
         <p>{bio}</p>

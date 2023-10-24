@@ -1,13 +1,13 @@
-import styles from "./header.module.css";
+import "./header.css";
 import GitHubLogo from "../assets/github.svg";
 
 export function Header() {
   return (
-    <header className={styles.wrapper}>
+    <header className="header__wrapper">
       <h2>RepoSpy 🔎</h2>
       <a
         aria-label="RepoSpy GitHub page"
-        className={styles.logo}
+        className="header__logo"
         href="https://github.com/PeteLindsell/repo-spy"
         rel="noopener noreferrer"
         target="_blank"

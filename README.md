@@ -40,9 +40,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser to see the r
 
 ### Styling
 
-- CSS Modules
-
-Considered a component library like MUI which is great for quickly prototyping but for the simplicity of this site decided to go for a lighter weight option of CSS Modules
+Considered a component library like MUI which is great for quickly prototyping or styled components as I used in the component library I originally created and then lead the development on for Cancer Research [github.com/CRUKorg/cruk-react-components](https://github.com/CRUKorg/cruk-react-components#readme) but for the simplicity of this site decided to go for a lighter weight option of CSS Modules
 
 ### Framework
 

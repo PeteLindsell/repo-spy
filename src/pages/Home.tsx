@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 
-import styles from "./Home.module.css";
+import "./home.css";
 import { Search } from "../components/SearchForm";
 import { getRepos, getUser } from "../services/api";
 import { Pagination } from "../components/Pagination";
@@ -42,8 +42,8 @@ export function Home() {
   const totalPages = repoData ? Math.ceil(repoData.total_count / PER_PAGE) : 0;
 
   return (
-    <main className={styles.wrapper}>
-      <h1 className={styles.title}>Search for GitHub repos</h1>
+    <main className="home__wrapper">
+      <h1 className="home__title">Search for GitHub repos</h1>
       <Search onSubmit={(data) => setUserName(data.userName)} />
       {userError && (
         <div role="alert">Sorry we could not find the user "{userName}"</div>
@@ -59,14 +59,14 @@ export function Home() {
         />
       )}
       {repoData && (
-        <div className={styles.repos}>
+        <div className="home__repos">
           <RepoFilters
             onSubmit={(data) => {
               setSort(data.sort);
               setQuery(data.query);
             }}
           />
-          <div className={styles.reposList}>
+          <div className="home__reposList">
             {repoData.total_count ? (
               <>
                 <p role="alert" id="page-count">

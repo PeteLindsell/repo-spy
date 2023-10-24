@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import styles from "./repoFilters.module.css";
+import "./repoFilters.css";
 import { GetReposParams } from "../services/api";
 
 export type FilterFields = {
@@ -40,7 +40,7 @@ export function RepoFilters({ onSubmit }: RepoFiltersProps) {
         })
       )}
       noValidate
-      className={styles.wrapper}
+      className="repo-filters__wrapper"
     >
       <h3>Filters</h3>
       <label>
